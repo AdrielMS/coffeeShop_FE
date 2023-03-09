@@ -1,0 +1,16 @@
+.detail-form {
+  background-color: #9f9f9f;
+}
+
+.product-detail {
+  width: 30%;
+}
+
+.form-input-trans {
+  border: 0;
+  color: #9f9f9f;
+  background-color: #bbbbbb;
+  padding: 10px 0.5vw;
+  width: 41vw;
+  display: block;
+}

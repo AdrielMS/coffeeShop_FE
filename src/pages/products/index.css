@@ -1,0 +1,17 @@
+.promo-form {
+  display: block;
+  /* flex: 0.3; */
+}
+
+.product-form {
+  /* flex: 0.7; */
+}
+
+.promo-form h6 {
+  display: block;
+}
+
+.product-images {
+  height: 150px;
+  width: 150px;
+}
