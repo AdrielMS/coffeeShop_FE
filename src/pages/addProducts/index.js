@@ -33,11 +33,16 @@ const AddProducts = ({ img, ...rest }) => {
     console.log(image);
 
     axios
-      .post(`http://localhost:5000/api/v1/products/`, data, {
-        headers: {
-          "content-type": "multipart/form-data",
-        },
-      })
+      .post(
+        // `http://localhost:5000/api/v1/products/`,
+        `https://coffeeshop.cyclic.app/api/v1/products`,
+        data,
+        {
+          headers: {
+            "content-type": "multipart/form-data",
+          },
+        }
+      )
       .then((res) => {
         console.log("post success:", res);
         navigate("/productsAdmin");
