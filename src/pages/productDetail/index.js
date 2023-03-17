@@ -48,7 +48,7 @@ const ProductDetail = () => {
               className="rounded-full h-[250px] w-[250px] justify-center"
             />
 
-            <h1 className="text-[50px] font-bold">
+            <h1 className="text-[40px] font-bold">
               <a>{dataProduct.title}</a>
             </h1>
             <a className="text-[20px] ">Rp. {dataProduct.price}</a>
