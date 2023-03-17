@@ -45,13 +45,13 @@ const ProductDetail = () => {
               src={`http://localhost:5000/upload/images/${
                 dataProduct.images ? dataProduct.images[0].filename : ""
               }`}
-              className="rounded-full h-[250px] w-[250px]"
+              className="rounded-full h-[250px] w-[250px] justify-center"
             />
 
             <h1 className="text-[50px] font-bold">
               <a>{dataProduct.title}</a>
             </h1>
-            <a className="text-[20px] ">{dataProduct.price}</a>
+            <a className="text-[20px] ">Rp. {dataProduct.price}</a>
             <button className="btn bg-secondary block px-[90px] py-[10px] mb-5 rounded-xl">
               Add to Cart
             </button>
