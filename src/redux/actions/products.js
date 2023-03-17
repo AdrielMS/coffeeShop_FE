@@ -13,13 +13,16 @@ const getAllproductsFail = (err) => {
 export const getAllproducts = () => {
   return (dispatch) => {
     dispatch(getAllproductsRequest());
-    return axios
-      .get("http://localhost:5000/api/v1/products")
-      .then((res) => {
-        dispatch(getAllproductsSuccess(res.data));
-      })
-      .catch((err) => {
-        dispatch(getAllproductsFail(err.response.data));
-      });
+    return (
+      axios
+        // .get("http://localhost:5000/api/v1/products")
+        .get("https://coffeeshop.cyclic.app/api/v1/products")
+        .then((res) => {
+          dispatch(getAllproductsSuccess(res.data));
+        })
+        .catch((err) => {
+          dispatch(getAllproductsFail(err.response.data));
+        })
+    );
   };
 };
