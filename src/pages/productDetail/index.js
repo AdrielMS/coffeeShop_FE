@@ -11,7 +11,8 @@ const ProductDetail = () => {
   const [dataProduct, setDataProduct] = useState([]);
   useEffect(() => {
     axios
-      .get(`http://localhost:5000/api/v1/products/${id}`)
+      // .get(`http://localhost:5000/api/v1/products/${id}`)
+      .get(`https://coffeeshop.cyclic.app/api/v1/products/${id}`)
       .then((res) => {
         // console.log(dataProduct.images);
         setDataProduct(res.data.data);
