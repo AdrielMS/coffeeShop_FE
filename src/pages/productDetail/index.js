@@ -42,7 +42,10 @@ const ProductDetail = () => {
             </p>
 
             <img
-              src={`http://localhost:5000/upload/images/${
+              // src={`http://localhost:5000/upload/images/${
+              //   dataProduct.images ? dataProduct.images[0].filename : ""
+              // }`}
+              src={`https://coffeeshop.cyclic.app/upload/images/${
                 dataProduct.images ? dataProduct.images[0].filename : ""
               }`}
               className="rounded-full h-[250px] w-[250px] justify-center"
@@ -60,7 +63,7 @@ const ProductDetail = () => {
             </button>
           </div>
           <div className="product-detail">
-            <div className="container mt-50">
+            <div className="container mt-50 flex justify-center">
               <div className="card rounded-xl bg-white">
                 <div className="col text-secondary">
                   <p className="text-secondary py-[10px]">

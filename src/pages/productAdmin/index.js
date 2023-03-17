@@ -25,7 +25,8 @@ const ProductsAdmin = (e) => {
 
   const confirmDelete = (id) => {
     axios
-      .delete(`http://localhost:5000/api/v1/products/${id}`)
+      // .delete(`http://localhost:5000/api/v1/products/${id}`)
+      .delete(`https://coffeeshop.cyclic.app/api/v1/products/${id}`)
       .then((res) => {
         console.log("success delete: ", res.data);
         navigate("/products");
