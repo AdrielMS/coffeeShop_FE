@@ -35,7 +35,7 @@ const AddProducts = ({ img, ...rest }) => {
     axios
       .post(
         // `http://localhost:5000/api/v1/products/`,
-        `https://coffeeshop.cyclic.app/api/v1/products`,
+        `https://coffeeshop.cyclic.app/api/v1/products/`,
         data,
         {
           headers: {
