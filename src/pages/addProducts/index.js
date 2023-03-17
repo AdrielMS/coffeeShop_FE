@@ -34,8 +34,8 @@ const AddProducts = ({ img, ...rest }) => {
 
     axios
       .post(
-        // `http://localhost:5000/api/v1/products/`,
-        `https://coffeeshop.cyclic.app/api/v1/products/`,
+        `http://localhost:5000/api/v1/products/`,
+        // `https://coffeeshop.cyclic.app/api/v1/products/`,(Kalau pake Cyclic harus pake AWS SDK di backendnya)
         data,
         {
           headers: {
