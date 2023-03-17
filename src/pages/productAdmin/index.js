@@ -28,7 +28,7 @@ const ProductsAdmin = (e) => {
       .delete(`http://localhost:5000/api/v1/products/${id}`)
       .then((res) => {
         console.log("success delete: ", res.data);
-        window.reload("/productsAdmin");
+        navigate("/products");
       })
       .catch((err) => console.log("err: ", err));
   };
