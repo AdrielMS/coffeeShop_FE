@@ -164,7 +164,7 @@ const ProductsAdmin = (e) => {
                     <p>
                       <strong>{item.title}</strong>
                     </p>
-                    <p>{item.price}</p>
+                    <p>Rp. {item.price}</p>
                     <Link to={`/editProducts/${item.id}`}>
                       <button className="btn bg-green-500 font-bold mx-[10px] px-[10px] rounded hover:border-[2px] border-black">
                         Edit
