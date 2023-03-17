@@ -156,7 +156,7 @@ const ProductsAdmin = (e) => {
                       <img
                         className="rounded-full product-images "
                         // src={`http://localhost:5000/upload/images/${item.images[0].filename}`}
-                        src={`https://coffeeshop.cyclic.app/upload/images${item.images[0].filename}`}
+                        src={`https://coffeeshop.cyclic.app/upload/images/${item.images[0].filename}`}
                         alt=""
                       />
                     </Link>
