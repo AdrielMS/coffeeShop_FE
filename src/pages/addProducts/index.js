@@ -29,7 +29,7 @@ const AddProducts = ({ img, ...rest }) => {
     data.append("img", image);
     data.append("category", category);
     data.append("price", price);
-    data.append("desc", desc);
+    data.append("description", desc);
     console.log(image);
 
     axios
