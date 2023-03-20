@@ -16,7 +16,7 @@ const Login = () => {
     event.preventDefault();
     axios({
       // url: "http://localhost:5000/api/v1/auth/login",
-      url: "https://coffeeshop.cyclic.app/api/v1/auth/login",
+      url: "https://coffeeshopbe-adrel-production.up.railway.app/api/v1/auth/login",
       method: "POST",
       data: loginForm,
     })

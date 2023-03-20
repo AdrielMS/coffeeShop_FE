@@ -16,7 +16,9 @@ export const getAllproducts = () => {
     return (
       axios
         // .get("http://localhost:5000/api/v1/products")
-        .get("https://coffeeshop.cyclic.app/api/v1/products")
+        .get(
+          "https://coffeeshopbe-adrel-production.up.railway.app/api/v1/products"
+        )
         .then((res) => {
           dispatch(getAllproductsSuccess(res.data));
         })

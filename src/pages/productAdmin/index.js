@@ -26,7 +26,9 @@ const ProductsAdmin = (e) => {
   const confirmDelete = (id) => {
     axios
       // .delete(`http://localhost:5000/api/v1/products/${id}`)
-      .delete(`https://coffeeshop.cyclic.app/api/v1/products/${id}`)
+      .delete(
+        `https://coffeeshopbe-adrel-production.up.railway.app/api/v1/products/${id}`
+      )
       .then((res) => {
         console.log("success delete: ", res.data);
         navigate("/products");
@@ -157,7 +159,7 @@ const ProductsAdmin = (e) => {
                       <img
                         className="rounded-full product-images "
                         // src={`http://localhost:5000/upload/images/${item.images[0].filename}`}
-                        src={`https://coffeeshop.cyclic.app/upload/images/${item.images[0].filename}`}
+                        src={`https://coffeeshopbe-adrel-production.up.railway.app/upload/images/${item.images[0].filename}`}
                         alt=""
                       />
                     </Link>

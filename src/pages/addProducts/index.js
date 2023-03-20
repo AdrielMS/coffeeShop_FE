@@ -34,8 +34,9 @@ const AddProducts = ({ img, ...rest }) => {
 
     axios
       .post(
-        `http://localhost:5000/api/v1/products/`,
+        // `http://localhost:5000/api/v1/products/`,
         // `https://coffeeshop.cyclic.app/api/v1/products/`,(Kalau pake Cyclic harus pake AWS SDK di backendnya)
+        `https://coffeeshopbe-adrel-production.up.railway.app/api/v1/products/`,
         data,
         {
           headers: {
@@ -44,7 +45,7 @@ const AddProducts = ({ img, ...rest }) => {
         }
       )
       .then((res) => {
-        console.log("post success:", res);
+        alert("post success:", res);
         navigate("/productsAdmin");
       })
       .catch((err) => console.log("err:", err));

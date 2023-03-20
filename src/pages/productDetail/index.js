@@ -12,7 +12,9 @@ const ProductDetail = () => {
   useEffect(() => {
     axios
       // .get(`http://localhost:5000/api/v1/products/${id}`)
-      .get(`https://coffeeshop.cyclic.app/api/v1/products/${id}`)
+      .get(
+        `https://coffeeshopbe-adrel-production.up.railway.app/api/v1/products/${id}`
+      )
       .then((res) => {
         // console.log(dataProduct.images);
         setDataProduct(res.data.data);
@@ -45,7 +47,7 @@ const ProductDetail = () => {
               // src={`http://localhost:5000/upload/images/${
               //   dataProduct.images ? dataProduct.images[0].filename : ""
               // }`}
-              src={`https://coffeeshop.cyclic.app/upload/images/${
+              src={`https://coffeeshopbe-adrel-production.up.railway.app/upload/images/${
                 dataProduct.images ? dataProduct.images[0].filename : ""
               }`}
               className="rounded-full h-[250px] w-[250px] justify-center"
