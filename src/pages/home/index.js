@@ -6,6 +6,8 @@ const Home = () => {
   return (
     <>
       <Header />
+      {/* banner content */}
+      {/* Search bar */}
       <div className="search-container">
         <div className="search-bar">
           <img
@@ -19,7 +21,7 @@ const Home = () => {
           />
         </div>
       </div>
-
+      {/* end of search bar */}
       <section className="banner">
         <h1 className="text-[50px] text-white text-Rubik h1bann">
           Start Your Day with Coffee and Good Meals
@@ -29,11 +31,78 @@ const Home = () => {
           love just for you. Start your day with us for a bigger smile!
         </p>
         <a href="#">
-          <button className="btn bg-primary font-bold text-secondary eff-btn btnbann rounded-full ">
+          <button className="btn bg-primary font-bold text-secondary eff-btn btnbann rounded-full my-[20px]">
             Get Started
           </button>
         </a>
       </section>
+      <div>
+        <div className="flex flex-warp bg-[#FFFFFF] justify-between mx-[200px] my-[50px] rounded shadow-2xl">
+          <div className="flex p-[30px] mx-[20px]">
+            <img src={require("../../assets/img/user.png")} />
+            <div className="m-[5px]">
+              <h1 className="font-bold">90+</h1>
+              <h2>Staff</h2>
+            </div>
+          </div>
+          <div className="flex p-[30px] mx-[20px]">
+            <img src={require("../../assets/img/location.png")} />
+            <div className="m-[5px]">
+              <h1 className="font-bold">30+</h1>
+              <h2>Store</h2>
+            </div>
+          </div>
+          <div className="flex p-[30px] mx-[20px]">
+            <img src={require("../../assets/img/Server.png")} />
+            <div className="m-[5px]">
+              <h1 className="font-bold">800+</h1>
+              <h2>Costumer</h2>
+            </div>
+          </div>
+        </div>
+      </div>
+      {/* end of banner content */}
+      {/* 2nd banner content */}
+      <div>
+        <div className="flex justify-center">
+          <img
+            className="mx-[10px]"
+            src={require("../../assets/img/home1.png")}
+          />
+          <div className="mx-[10px]">
+            <h1 className="font-bold text-[35px] w-[450px]">
+              We Provide Good Coffee and Healthy Meals
+            </h1>
+            <h2 className="w-[450px] py-[10px]">
+              You can explore the menu that we provide with fun and have their
+              own taste and make your day better.
+            </h2>
+            <ul className="list-disc">
+              <li className="my-[10px]">High quality beans</li>
+              <li className="my-[10px]">
+                Healthy meals, you can request the ingredients
+              </li>
+              <li className="my-[10px]">
+                Chat with our staff to get better experience for ordering
+              </li>
+              <li className="my-[10px]">
+                Free member card with a minimum purchase of IDR 200.000.
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      {/* end of 2nd banner content */}
+      {/* 3rd banner content */}
+      <div>
+        <div className="text-center">
+          <h1 className="text-[35px] font-bold">Here's People Favortie</h1>
+          <h2>
+            Let’s choose and have a bit taste of poeple’s favorite. It might be
+            yours too!
+          </h2>
+        </div>
+      </div>
     </>
   );
 };
