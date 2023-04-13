@@ -1,6 +1,7 @@
 import "../home/index.css";
 import "../../assets/style/global.css";
 import Header from "../../components/header";
+import Footer from "../../components/footer";
 
 const Home = () => {
   return (
@@ -96,13 +97,87 @@ const Home = () => {
       {/* 3rd banner content */}
       <div>
         <div className="text-center">
-          <h1 className="text-[35px] font-bold">Here's People Favortie</h1>
-          <h2>
+          <h1 className="text-[35px] font-bold my-[10px]">
+            Here's People Favortie
+          </h1>
+          <h2 className="my-[10px]">
             Let’s choose and have a bit taste of poeple’s favorite. It might be
             yours too!
           </h2>
         </div>
+        <div className="flex justify-center">
+          <div className="mx-[10px]">
+            <div className="border border-gray p-[50px]">
+              <div className="flex justify-center py-[50px]">
+                <img
+                  className="rounded-full"
+                  src={require("../../assets/img/product4.png")}
+                />
+              </div>
+              <h1 className="my-[20px] text-center font-bold">
+                Hazzelnut Latte
+              </h1>
+              <ul className="list-disc">
+                <li className="my-[20px]">HazelnutSyrup</li>
+                <li className="my-[20px]">Wanilla Whipped Cream</li>
+                <li className="my-[20px]">Ice / Hot</li>
+                <li className="my-[20px]">Sliced Banana on Top</li>
+              </ul>
+              <div className="text-center py-[20px]">
+                <h1>IDR 25.000</h1>
+                <button>Order Now</button>
+              </div>
+            </div>
+          </div>
+          <div className="mx-[10px]">
+            <div className="border border-gray p-[50px]">
+              <div className="flex justify-center py-[50px]">
+                <img
+                  className="rounded-full"
+                  src={require("../../assets/img/product4.png")}
+                />
+              </div>
+              <h1 className="my-[20px] text-center font-bold">
+                Hazzelnut Latte
+              </h1>
+              <ul className="list-disc">
+                <li className="my-[20px]">HazelnutSyrup</li>
+                <li className="my-[20px]">Wanilla Whipped Cream</li>
+                <li className="my-[20px]">Ice / Hot</li>
+                <li className="my-[20px]">Sliced Banana on Top</li>
+              </ul>
+              <div className="text-center py-[20px]">
+                <h1>IDR 25.000</h1>
+                <button>Order Now</button>
+              </div>
+            </div>
+          </div>
+          <div className="mx-[10px]">
+            <div className="border border-gray p-[50px]">
+              <div className="flex justify-center py-[50px]">
+                <img
+                  className="rounded-full"
+                  src={require("../../assets/img/product4.png")}
+                />
+              </div>
+              <h1 className="my-[20px] text-center font-bold">
+                Hazzelnut Latte
+              </h1>
+              <ul className="list-disc">
+                <li className="my-[20px]">HazelnutSyrup</li>
+                <li className="my-[20px]">Wanilla Whipped Cream</li>
+                <li className="my-[20px]">Ice / Hot</li>
+                <li className="my-[20px]">Sliced Banana on Top</li>
+              </ul>
+              <div className="text-center py-[20px]">
+                <h1>IDR 25.000</h1>
+                <button>Order Now</button>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
+      <Footer />
     </>
   );
 };
